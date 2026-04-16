@@ -3,13 +3,15 @@ import { useLoaderData } from "react-router-dom";
 
 const Users = () => {
   //2.3read
-  const loadeddata = useLoaderData();
-  const [users, setUsers] = useState(loadeddata);
+const loadeddata = useLoaderData();
+const [users, setUsers] = useState(loadeddata?.users || []);
+
+
 
 //3.2 deleted
   const handleDelete = id =>{
         console.log(id);
-        fetch(`http://localhost:5000/user/${id}`,{
+        fetch(`https://coffee-store-server-lovat-one.vercel.app/user/${id}`,{
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -26,7 +28,7 @@ const Users = () => {
 
   return (
     <div>
-      <h1>users : {loadeddata.length}</h1>
+      <h1>users : {users.length}</h1>
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}

@@ -18,7 +18,7 @@ const handleAddCoffee = event =>{
 
 
     // send to data server
-    fetch('http://localhost:5000/coffee',{
+    fetch('https://coffee-store-server-lovat-one.vercel.app/coffee',{
         method:'POST',
         headers:{
             'content-type':'application/json'

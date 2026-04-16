@@ -19,7 +19,7 @@ const SignIn = () => {
           lastLoginAt: result.user?.metadata?.lastSignInTime,
         };
         //update last logged at in the datacbase
-        fetch("http://localhost:5000/user", {
+        fetch("https://coffee-store-server-lovat-one.vercel.app/user", {
           method: "PATCH",
           headers: {
             "content-type": "application/json",

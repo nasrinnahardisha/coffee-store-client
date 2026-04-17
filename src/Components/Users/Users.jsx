@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router";
 
 const Users = () => {
   //2.3read
 const loadeddata = useLoaderData();
-const [users, setUsers] = useState(loadeddata?.users || []);
+const [users, setUsers] = useState(loadeddata || []);
 
 
 

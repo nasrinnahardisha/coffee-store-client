@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App></App>,
-        // loader: () => fetch("https://coffee-store-server-lovat-one.vercel.app/coffee"),
+        // loader: () => fetch("https://coffee-store-server-gilt-delta.vercel.app/coffee"),
       },
       {
         path: "addCoffee",
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         path: "updateCoffee/:id",
         element: <UpdateCoffee></UpdateCoffee>,
         loader: ({ params }) =>
-          fetch(`https://coffee-store-server-lovat-one.vercel.app/coffee/${params.id}`),
+          fetch(`https://coffee-store-server-gilt-delta.vercel.app/coffee/${params.id}`),
       },
       {
         path: "/signUp",
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         path: "/users",
         element: <Users></Users>,
         //2.2 read
-        loader: () => fetch("https://coffee-store-server-lovat-one.vercel.app/user"),
+        loader: () => fetch("https://coffee-store-server-gilt-delta.vercel.app/user"),
       },
     ],
   },

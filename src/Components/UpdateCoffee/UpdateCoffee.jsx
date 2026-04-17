@@ -18,7 +18,7 @@
 
 
 //     // send to data server
-//     fetch('https://coffee-store-server-lovat-one.vercel.app/coffee',{
+//     fetch('https://coffee-store-server-gilt-delta.vercel.app/coffee',{
 //         method:'POST',
 //         headers:{
 //             'content-type':'application/json'
@@ -176,7 +176,7 @@ const UpdateCoffee = () => {
         console.log(updateCoffee);
 
         // send to data server
-        fetch(`https://coffee-store-server-lovat-one.vercel.app/Coffee/${_id}`, {
+        fetch(`https://coffee-store-server-gilt-delta.vercel.app/Coffee/${_id}`, {
             method: 'PUT', // or 'POST' if adding new coffee
             headers: {
                 'Content-Type': 'application/json'

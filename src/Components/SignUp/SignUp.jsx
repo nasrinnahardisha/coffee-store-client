@@ -26,7 +26,7 @@ const SignUp = () => {
         //new user has been created
         const user = { email,createAt };
         //1.1create
-        fetch('https://coffee-store-server-lovat-one.vercel.app/user',{
+        fetch('https://coffee-store-server-gilt-delta.vercel.app/user',{
           method:'POST',
           headers:{
             'content-type':'application/json'

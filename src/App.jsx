@@ -7,7 +7,7 @@ function App() {
   // const loadedCoffees = useLoaderData();
   // const [coffees, setCoffees] = useState(loadedCoffees);
   const [bookings, setBookings] = useState([]);
-  const url = "https://coffee-store-server-lovat-one.vercel.app/coffee";
+  const url = "https://coffee-store-server-gilt-delta.vercel.app/coffee";
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
